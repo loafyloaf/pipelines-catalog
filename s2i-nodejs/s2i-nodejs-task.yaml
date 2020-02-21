@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: Task
 metadata:
-  name: s2i-nodejs
+  name: s2i-nodejs-loaf
 spec:
   inputs:
     resources:
