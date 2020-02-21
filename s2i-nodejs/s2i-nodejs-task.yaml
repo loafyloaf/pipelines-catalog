@@ -44,7 +44,7 @@ spec:
       securityContext:
         privileged: true
     - name: push
-      image: quay.io/buildah/stable
+      image: quay.io/buildah/v1.11.4
       command: ['buildah', 'push', '--tls-verify=$(inputs.params.TLSVERIFY)', '$(outputs.resources.image.url)', 'docker://$(outputs.resources.image.url)']
       volumeMounts:
         - name: varlibcontainers
